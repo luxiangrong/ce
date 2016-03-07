@@ -1,0 +1,148 @@
+$icon-font-path: '../fonts/';
+@import "iconfont";
+$grid-gutter-width: 0px;
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+* {
+    @include box-sizing(content-box);
+}
+
+*:before,
+*:after {
+    @include box-sizing(content-box);
+}
+
+body {
+    @include gradient-vertical(#b5e1ff, #fff);
+}
+
+.container {
+    width: 1024px !important;
+    padding: 0;
+}
+
+h1.title {
+    background-color: #c2def3;
+    text-align: center;
+    line-height: 57px;
+    font-size: 34px;
+    color: #001e51;
+    margin: 0;
+}
+
+.nav {
+    text-align: center;
+    .container {
+        line-height: 64px;
+        background-color: #0054a6;
+        ul {
+            margin-bottom: 0;
+            > li {
+                *display: inline;
+                > a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    .container {
+        position: relative;
+        background: url(../images/j01.jpg) no-repeat center top;
+        height: 423px;
+        .logo {
+            position: absolute;
+            top: 22px;
+            left: 50px;
+        }
+        .address-and-date {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #025b95;
+            address {
+                margin-bottom: 0;
+                font-size: 23px;
+            }
+            .date {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.intro {
+    .container {
+        background: #fff url(../images/j02.jpg) no-repeat left center;
+        padding: 60px 0;
+        .table {
+            margin-bottom: 0;
+        }
+        .title {
+            width: 330px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        p {
+            text-align: justify;
+            padding-right: 100px;
+        }
+    }
+}
+
+.org {
+    .container {
+        background-color: #fff;
+        padding-bottom: 50px;
+        .patch {
+            padding: 0 50px;
+        }
+        h1.title {
+            margin-bottom: 30px;
+        }
+        .row {
+            .col-xs-12 {
+                color: #001e51;
+                font-size: 20px;
+                line-height: 50px;
+                .iconfont {}
+                .patch {}
+            }
+            .col-xs-6 {
+                line-height: 40px;
+                .patch {}
+            }
+        }
+    }
+}
+
+.schedule {
+    .container {
+      background: #89c0e2 url(../images/p04.png) center center;
+    }
+    .row {
+        background: url(../images/p03.png) no-repeat 41.667% 0px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        color: #fff;
+        .col-xs-5 {
+            text-align: right;
+            line-height: 2;
+            .patch {
+              padding-right: 20px;
+            }
+        }
+        .col-xs-7 {
+          line-height: 2;
+          .patch {
+            padding-left: 20px;
+          }
+        }
+    }
+}

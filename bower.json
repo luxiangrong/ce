@@ -1,0 +1,17 @@
+{
+  "name": "ce",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.12.1",
+    "bootstrap-sass": "~3.3.5"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}
