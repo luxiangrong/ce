@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "1.12.1",
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "slick-carousel": "^1.5.9"
   },
   "overrides": {
     "bootstrap-sass": {

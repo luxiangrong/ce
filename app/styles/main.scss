@@ -2,7 +2,23 @@ $icon-font-path: '../fonts/';
 @import "iconfont";
 $grid-gutter-width: 0px;
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// Core variables and mixins
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
+
+// Core CSS
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+// Utility classes
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+
 // endbower
 * {
     @include box-sizing(content-box);
@@ -124,7 +140,7 @@ h1.title {
 
 .schedule {
     .container {
-      background: #89c0e2 url(../images/p04.png) center center;
+        background: #89c0e2 url(../images/p04.png) center center;
     }
     .row {
         background: url(../images/p03.png) no-repeat 41.667% 0px;
@@ -135,14 +151,133 @@ h1.title {
             text-align: right;
             line-height: 2;
             .patch {
-              padding-right: 20px;
+                padding-right: 20px;
             }
         }
         .col-xs-7 {
-          line-height: 2;
-          .patch {
-            padding-left: 20px;
-          }
+            line-height: 2;
+            .patch {
+                padding-left: 20px;
+            }
         }
+    }
+}
+
+.guest {
+    .guest-list {
+        padding: 50px 100px;
+        text-align: center;
+        > li {
+            a {
+                color: #4e4e4e;
+                font-size: 12px;
+                margin-bottom: 30px;
+                display: block;
+                text-decoration: none;
+                &:hover {
+                    color: darken(#4e4e4e, 20%);
+                }
+                img {
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    .info-wrap {
+        padding: 50px 100px;
+        background: #91c2e2;
+        color: #fff;
+        font-size: 16px;
+        img {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.partner {
+    .patch {
+        padding: 50px 80px;
+        font-size: 20px;
+        color: #001e51;
+        background-color: #fff;
+        .iconfont {
+            color: #001e51;
+        }
+        .list-inline {
+            margin-top: 10px;
+        }
+    }
+}
+
+.support-media {
+    .patch {
+        padding: 50px 100px;
+        background: #91c2e2;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.history {
+    .patch {
+        padding: 50px 100px;
+    }
+    #history-slick {
+        .slick-list {
+            img {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+                line-height: 2;
+                font-size: 12px;
+            }
+            a {
+                color: #4e4e4e;
+                text-decoration: none;
+                &:hover {
+                    color: darken(#4e4e4e, 20%);
+                }
+            }
+        }
+        .slick-prev,
+        .slick-next {
+            margin-top: -30px;
+            width: 30px;
+            height: 60px;
+            &:before {
+                content: '';
+            }
+        }
+        .slick-prev {
+            background: url(../images/p05.png) no-repeat center center;
+        }
+        .slick-next {
+            background: url(../images/p06.png) no-repeat center center;
+        }
+    }
+}
+
+.contactus {
+    margin-bottom: 100px;
+    .patch {
+        padding: 50px 100px;
+        background: #91c2e2;
+        color: #415766;
     }
 }
