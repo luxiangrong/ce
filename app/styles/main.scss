@@ -36,6 +36,7 @@ body {
 .container {
     width: 1024px !important;
     padding: 0;
+    position: relative;
 }
 
 h1.title {
@@ -280,4 +281,51 @@ h1.title {
         background: #91c2e2;
         color: #415766;
     }
+}
+
+
+.adv {
+    &.adv-1 {
+        display: block;
+        width: 980px;
+        height: 90px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    &.adv-2 {
+        display: block;
+        width: 125px;
+        height: 270px;
+        position: absolute;
+        left: 0px;
+        top: -270px;
+    }
+    &.adv-3 {
+        display: block;
+        width: 125px;
+        height: 270px;
+        position: absolute;
+        right: 0px;
+        top: -270px;
+    }
+    &.adv-4 {
+        display: block;
+        width: 125px;
+        height: 270px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    &.adv-5 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        bottom: 0px;
+        left: 80px;
+    }
+}
+
+.more {
+    display: none;
 }
